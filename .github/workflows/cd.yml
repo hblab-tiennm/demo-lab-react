@@ -26,7 +26,8 @@ jobs:
 
       - name: Build project
         run: npm run build
-        # Đảm bảo lệnh này tạo ra thư mục 'dist' hoặc 'build'
+        env:
+          VITE_API_URL: ${{ secrets.VITE_API_URL }}
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
