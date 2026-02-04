@@ -48,7 +48,7 @@ if (typeof document !== 'undefined') {
   `;
     try {
         styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
-    } catch (e) {
+    } catch {
         // Keyframes already exists or sheet not available
     }
 }

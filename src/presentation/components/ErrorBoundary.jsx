@@ -10,7 +10,7 @@ export class ErrorBoundary extends React.Component {
         this.state = { hasError: false, error: null, errorInfo: null };
     }
 
-    static getDerivedStateFromError(error) {
+    static getDerivedStateFromError() {
         return { hasError: true };
     }
 
@@ -35,7 +35,7 @@ export class ErrorBoundary extends React.Component {
                         >
                             Tải lại trang
                         </button>
-                        {process.env.NODE_ENV === 'development' && this.state.error && (
+                        {import.meta.env.MODE === 'development' && this.state.error && (
                             <details style={styles.details}>
                                 <summary>Chi tiết lỗi</summary>
                                 <pre style={styles.pre}>

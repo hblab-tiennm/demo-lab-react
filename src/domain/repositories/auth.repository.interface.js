@@ -39,9 +39,11 @@
  * Auth Repository Interface (for documentation/reference)
  * In production, this would be implemented by AuthRepository
  */
+/* eslint-disable no-unused-vars */
 export const AuthRepositoryInterface = {
   register: async (dto) => {},
   login: async (dto) => {},
   refreshToken: async (refreshToken) => {},
   logout: async () => {},
 };
+/* eslint-enable no-unused-vars */

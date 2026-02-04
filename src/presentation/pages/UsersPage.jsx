@@ -6,10 +6,11 @@ import { useUsers } from '../hooks/useUsers';
  * Users Page - List all users with real API data
  */
 export function UsersPage() {
-    const { users, loading, error, pagination, refresh } = useUsers();
+    const { users, loading, error, refresh } = useUsers();
 
     useEffect(() => {
         refresh();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
