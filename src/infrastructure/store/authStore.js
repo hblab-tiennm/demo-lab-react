@@ -6,7 +6,7 @@ import { persist } from 'zustand/middleware';
  * Global authentication state using Zustand with persistence
  */
 
-const createAuthStore = (set, get) => ({
+const createAuthStore = (set) => ({
   // State
   user: null,
   isAuthenticated: false,

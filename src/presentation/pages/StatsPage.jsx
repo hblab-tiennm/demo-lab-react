@@ -13,6 +13,7 @@ export function StatsPage() {
 
     useEffect(() => {
         refresh();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     // Chart data

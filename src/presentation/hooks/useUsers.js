@@ -46,6 +46,7 @@ export function useUsers(initialPage = 1, initialLimit = 10) {
 
   useEffect(() => {
     fetchUsers();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const goToPage = (page) => {

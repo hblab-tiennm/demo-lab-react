@@ -45,6 +45,7 @@ export function usePosts(initialPage = 1, initialLimit = 10) {
 
   useEffect(() => {
     fetchPosts();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const createPost = async (data) => {
